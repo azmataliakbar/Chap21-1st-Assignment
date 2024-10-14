@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert Messages</title>
+    <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+
+
+  <h1>Customized Alert Messages</h1>
+  <h5>Note: Enter a number, and the text will be sliced and reversed in a custom alert message.</h5>
+
+
+  <!-- Custom alert message 1 -->
+  <div class="alert" id="firstAlert">
+    <div class="alert-content">
+      <span class="close-btn" onclick="closeAlert('firstAlert')">&times;</span>
+      <button onclick="showInputForm()">Next</button>
+    </div>
+  </div>
+
+  <!-- Custom alert for number input -->
+  <div class="alert" id="inputAlert">
+    <div class="alert-content">
+      <span class="close-btn" onclick="closeAlert('inputAlert')">&times;</span>
+      <p>Please enter a number with a decimal point (e.g., 3.4):</p>
+      <input type="text" id="userInput" placeholder="Enter a number">
+      <button onclick="processInput()">Submit</button>
+    </div>
+  </div>
+
+  <!-- Custom alert message 3 for the result -->
+  <div class="alert" id="resultAlert">
+    <div class="alert-content">
+      <span class="close-btn" onclick="closeAlert('resultAlert')">&times;</span>
+      <p id="resultMessage">Reversed text will appear here based on the number input.</p>
+      <p>Original Text => "draW-floW-keeP-livE-looP-mapS" </p>
+    </div>
+  </div>
+
+  <script src="main21.js"></script>
+  <h4>Author: Azmat Ali</h4>
+</body>
+</html>
